@@ -330,3 +330,119 @@
     padding: 20px 10px;
   }
 }
+
+
+@media (max-width: 1200px) {
+    .content-container {
+        gap: clamp(1.25rem, 3vw, 1.5rem);
+    }
+
+    .phone-image {
+        max-width: clamp(11.25rem, 25vw, 12.5rem); /* Scales between 180px and 200px */
+    }
+
+    .partner-section {
+        max-width: clamp(12.5rem, 35vw, 18.75rem);
+    }
+}
+
+@media (max-width: 992px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .inline-wrapper {
+        flex-direction: column;
+        gap: clamp(1.25rem, 3vw, 1.5rem);
+        width: 100%;
+    }
+
+    .divider-vertical {
+        display: none;
+    }
+
+    .app-info, .partner-section {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: clamp(0.75rem, 2vw, 1rem);
+    }
+
+    .app-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: clamp(1.25rem, 3vw, 1.5rem);
+    }
+
+    .testimonials-title {
+        font-size: clamp(1.25rem, 3.5vw, 1.5rem); /* Scales between 20px and 24px */
+    }
+
+    .app-info h2 {
+        font-size: clamp(1.125rem, 2.8vw, 1.375rem); /* Scales between 18px and 22px */
+    }
+
+    .partner-section h2 {
+        font-size: clamp(1rem, 2.5vw, 1.25rem); /* Scales between 16px and 20px */
+    }
+
+    .cities-list {
+        justify-content: center;
+        gap: clamp(0.75rem, 2vw, 1.25rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonials-section {
+        padding: clamp(1rem, 2.5vw, 1.5rem) clamp(0.5rem, 1.5vw, 0.75rem);
+    }
+
+    .testimonial-card {
+        padding: clamp(0.75rem, 2vw, 1rem);
+    }
+
+    .phone-image {
+        max-width: clamp(10rem, 50vw, 12.5rem); /* Scales between 160px and 200px */
+    }
+
+    .partner-section {
+        padding: clamp(0.75rem, 2vw, 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-title {
+        font-size: clamp(1rem, 2.5vw, 1.25rem); /* Scales between 16px and 20px */
+    }
+
+    .app-info h2 {
+        font-size: clamp(0.875rem, 2.2vw, 1.125rem); /* Scales between 14px and 18px */
+    }
+
+    .cities-title {
+        font-size: clamp(0.875rem, 2.2vw, 1.125rem);
+    }
+
+    .city {
+        font-size: clamp(0.75rem, 2vw, 0.875rem); /* Scales between 12px and 14px */
+    }
+}
+
+@media (max-width: 320px) {
+    .testimonials-grid {
+        gap: clamp(0.5rem, 1.5vw, 0.75rem);
+    }
+
+    .phone-image {
+        max-width: clamp(9.375rem, 45vw, 11.25rem); /* Scales between 150px and 180px */
+    }
+}

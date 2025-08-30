@@ -644,3 +644,180 @@ color: #216900;
   .features-section { gap: 30px; }
   .feature-item { padding: 15px 0; }
 }
+
+
+/* ================== MEDIA QUERIES ================== */
+@media (max-width: 1200px) {
+    .booking-form-container {
+        width: clamp(15rem, 90vw, 53.125rem); /* Scales between 240px and 850px */
+    }
+
+    .main-content {
+        gap: clamp(1.25rem, 3vw, 1.5rem);
+    }
+
+    .car-section img {
+        width: clamp(15rem, 45vw, 25rem); /* Scales between 240px and 400px */
+        height: clamp(10rem, 25vw, 15.625rem); /* Scales between 160px and 250px */
+    }
+
+    .features-section {
+        gap: clamp(0.75rem, 2vw, 1rem);
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+        gap: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .car-section {
+        order: -1;
+    }
+
+    .car-section img {
+        width: clamp(15rem, 50vw, 25rem);
+        height: clamp(10rem, 30vw, 15rem);
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(1.25rem, 3vw, 1.5rem);
+    }
+
+    .hero-content h1 {
+        text-align: center;
+        font-size: clamp(1.5rem, 4vw, 1.875rem); /* Scales between 24px and 30px */
+    }
+
+    .booking-form-container {
+        width: clamp(90%, 95vw, 100%);
+        margin: 0 auto clamp(0.75rem, 2vw, 1rem) auto;
+    }
+
+    .info-section {
+        flex-direction: column;
+        gap: clamp(0.75rem, 2vw, 1rem);
+        margin-top: 0;
+        padding-top: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .info-item {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        padding: clamp(0.75rem, 2vw, 1rem) 0;
+    }
+
+    .info-item:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        gap: clamp(0.75rem, 2vw, 1rem);
+    }
+
+    .header-info {
+        flex-direction: column;
+        gap: clamp(0.75rem, 2vw, 1rem);
+    }
+
+    .user-actions {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(1.375rem, 3.5vw, 1.625rem); /* Scales between 22px and 26px */
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: clamp(0.75rem, 2vw, 1rem);
+    }
+
+    .form-field {
+        min-width: 100%;
+    }
+
+    .billing-info-section {
+        flex-direction: column;
+        gap: clamp(1.25rem, 3vw, 1.5rem);
+    }
+
+    .explore-cabs-btn {
+        width: clamp(70%, 80vw, 80%);
+    }
+
+    .why-yatri-container5 {
+        padding: clamp(0.75rem, 2vw, 1rem);
+    }
+
+    .feature-item {
+        gap: clamp(0.625rem, 1.5vw, 0.9375rem);
+    }
+
+    .feature-icon {
+        width: clamp(2.25rem, 5vw, 3.125rem); /* Scales between 36px and 50px */
+        height: clamp(2.25rem, 5vw, 3.125rem);
+        font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+    }
+
+    .feature-icon img {
+        width: clamp(1.25rem, 3vw, 1.875rem); /* Scales between 20px and 30px */
+        height: clamp(1.25rem, 3vw, 1.875rem);
+    }
+
+    .feature-title {
+        font-size: clamp(1rem, 2.5vw, 1.125rem);
+    }
+
+    .feature-description {
+        font-size: clamp(0.75rem, 2vw, 0.8125rem);
+    }
+
+    .car-section img {
+        width: clamp(15rem, 80vw, 21.875rem); /* Scales between 240px and 350px */
+        height: clamp(9.375rem, 25vw, 12.5rem); /* Scales between 150px and 200px */
+    }
+}
+
+@media (max-width: 600px) {
+    .tab-buttons {
+        flex-direction: column;
+        gap: clamp(0.5rem, 1.5vw, 0.625rem);
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: clamp(0.5rem, 1.5vw, 0.625rem);
+    }
+
+    .explore-cabs-btn {
+        width: clamp(80%, 90vw, 90%);
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title2 {
+        font-size: clamp(0.875rem, 2.2vw, 1.125rem); /* Scales between 14px and 18px */
+    }
+
+    .features-section {
+        gap: clamp(0.75rem, 2vw, 1rem);
+    }
+
+    .feature-item {
+        padding: clamp(0.625rem, 1.5vw, 0.75rem) 0;
+    }
+
+    .time-input-container {
+        width: clamp(10rem, 80vw, 12.5rem); /* Scales between 160px and 200px */
+    }
+}
