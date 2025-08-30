@@ -159,6 +159,8 @@ const WhyYatri = () => {
             name="from"
             value={formData.from}
             onChange={handleInputChange}
+            className='slect'
+
           >
             <option value="">Select City</option>
             {cities.map((city, idx) => (
@@ -173,6 +175,7 @@ const WhyYatri = () => {
               name="to"
               value={formData.to[0] || ''}
               onChange={(e) => handleInputChange(e, 0)}
+              className='toslect'
             >
               <option value="">Select City</option>
               {cities.map((city, idx) => (

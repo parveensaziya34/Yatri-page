@@ -7,6 +7,7 @@
 }
 
 .testimonials-section {
+  margin-top:60px;
   background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
   padding: 40px 20px;
   color: white;
@@ -172,6 +173,49 @@
     height: auto;
   }
 }
+
+
+
+.partner-btn {
+  background-color: #28a745; /* Green background */
+  color: white;             /* White text */
+  font-weight: bold;
+  padding: 12px 24px;       /* Thoda padding */
+  border: none;
+  border-radius: 6px;       /* Rounded edges */
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;  /* Text center horizontally */
+  align-items: center;      /* Text center vertically */
+  margin: 20px auto 0 auto; /* 👈 upar se 20px ka gap */
+}
+
+
+.rental {
+  color: #06ab43; /* WhatsApp green */
+  font-weight: bold;
+}
+
+
+.download-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translateX(-30px); /* 👈 30px left shift */
+}
+
+.highlight {
+  color: #28a745; /* Bootstrap success green */
+  font-weight: bold;
+}
+
+
+.code-highlight {
+  color: green; /* 👈 Green color */
+  font-weight: bold; /* Optional: thoda highlight ke liye */
+}
+
 
 /* ✅ Divider Vertical Fix */
 .divider-vertical {

@@ -145,7 +145,7 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              {/* <div className="divider-vertical"></div> */}
+              <div className="divider-vertical"></div>
 
               {/* Partner Section */}
               <div className="partner-section">
