@@ -1,0 +1,242 @@
+/* General/Utility Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.car-types-section {
+    padding: 20px 0;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #494949;
+}
+
+/* ---------------- CAR RENTAL BENEFITS SECTION ---------------- */
+.car-rental-benefits {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.car-rent极l-benefits-inner {
+    max-width: 1000px; /* Heading aur content dono same width */
+    margin: 0 auto;
+}
+
+/* Heading */
+.car-rental-benefits .benefits-header {
+    background: #216900;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4极 4px 0 0; /* Rounded top corners */
+}
+
+.car-rental-benefits .benefits-header h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Content box */
+.benefits-content {
+    font-size: 16px;
+    line-height: 1.8;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 0 0 4px 4px; /* Rounded bottom corners */
+    font-family: 'Poppins', sans-serif;
+}
+
+.benefits-content p {
+    margin-bottom: 25px;
+    color: #494949;
+    font-size: 18px;
+    font-family: '极ns', sans-serif;
+}
+
+.benefits-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.benefits-content li {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+    color: #494949;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.benefits-content li strong {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------- CAR TYPES SECTION ---------------- */
+.car-types-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto; /* Added 50px bottom margin */
+    font-family: 'Poppins', sans-serif;
+    align-items: stretch; /* Equal height for all boxes */
+}
+
+.car-type-box {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column; /* Header + content stack */
+}
+
+/* Specific styling for IDEAL FOR box */
+.car-type-box:nth-child(4) {
+    flex: 1.5; /* Wider box */
+}
+
+.green-header {
+    background-color: #4A7437;
+    color: #fff;
+    padding: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.green-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-box {
+    flex-grow: 1; /* Fills remaining height */
+    display: flex;
+    flex-direction: column;
+}
+
+.content-box p {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #494949;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #D5F2C8; /* Light green */
+    font-family: 'Poppins', sans-serif;
+    flex-grow: 1; /* Each row also expands */
+}
+
+/* ---------------- WHY CHOOSE SECTION ---------------- */
+.why-choose-section {
+    padding: 50px 0;
+    margin: 80px 0; /* Increased from 50px to 80px */
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-choose-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-choose-text {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-choose-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #494949;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-choose-title .green-text {
+   color: #4A7437;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-choose-description {
+    font-size: 16px;
+    color: #494949;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-choose-image {
+    flex: 1;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-choose-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------------- RESPONSIVE STYLES ---------------- */
+@media (max-width: 768px) {
+    .car-types-container, 
+    .car-type-row, 
+    .car-type-box, 
+    .car-type-header {
+        display: block;
+        width: 100%;
+    }
+    
+    .car-type-box {
+        text-align: left;
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .car-type-header .car-type-box {
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    .car-rental-benefits .benefits-header h3 {
+        font-size: 20px;
+    }
+    
+    .benefits-content {
+        font-size: 14px;
+        padding: 20px;
+    }
+    
+    .benefits-content p {
+        font-size: 16px;
+    }
+    
+    .benefits-content li {
+        font-size: 14px;
+    }
+/*     
+    .why-choose-title {
+        font-size: 22px;
+    }
+    
+    .why-choose-description {
+        font-size: 14px;
+    /* } */
+}

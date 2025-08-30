@@ -1,0 +1,288 @@
+
+.yatri-landing {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.testimonials-section {
+  background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+  padding: 40px 20px;
+  color: white;
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 10px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: white;
+  color: #333;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 15px;
+}
+
+.star {
+  color: #4c00ff;
+  font-size: 18px;
+}
+
+.download-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.store-icon {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.testimonial-text {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.customer-info {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.customer-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.customer-location {
+  font-size: 12px;
+  color: #666;
+}
+
+/* ---------------- Main Content ---------------- */
+.main-content {
+  background: white;
+  padding: 60px 20px;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;   /* ✅ phone + inline-wrapper ek hi row */
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Phone Mockup ko left chipkao */
+.phone-mockup {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-start; /* ✅ left align */
+  align-items: flex-start;
+  order: 0;
+}
+
+.phone-image {
+  max-width: 220px;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+/* Inline wrapper = App Info + Divider + Partner ko ek row */
+.inline-wrapper {
+  display: flex;
+  align-items: flex-start;   /* ✅ sab upar se align ho */
+  justify-content: space-between;
+  gap: 30px;
+  flex: 1;
+  order: 1;
+}
+
+/* App Info */
+.inline-wrapper .app-info {
+  flex: 1;                   /* ✅ space occupy kare */
+  padding-right: 20px;
+}
+
+/* Divider fix */
+.divider-vertical {
+  width: 2px;
+  background: #000;
+  align-self: stretch;
+}
+
+/* Partner section */
+.partner-section {
+  flex: 1;                   /* ✅ equal space mile */
+  max-width: 400px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 992px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inline-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .divider-vertical {
+    display: none; /* ✅ Mobile me divider hide */
+  }
+
+  .phone-image {
+    max-width: 220px;
+    height: auto;
+  }
+}
+
+/* ✅ Divider Vertical Fix */
+.divider-vertical {
+  width: 2px;
+  background: black;
+  align-self: stretch; /* ✅ full height auto adjust */
+}
+
+/* ---------------- Cities Section ---------------- */
+.cities-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;              /* 👈 inline side by side */
+  align-items: center;        /* vertical center alignment */
+  justify-content: space-between; /* title left, list right */
+  gap: 10px;                  /* thoda spacing */
+}
+
+.cities-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;                  /* margin-bottom hatao */
+  color: #333;
+  white-space: nowrap;        /* break na ho */
+}
+
+.cities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.city {
+  font-size: 1.1rem;
+  color: #000;                 
+  text-decoration: none;
+  display: inline-block;       /* 👈 underline text ke sath chipka rahe */
+  padding: 0;                  /* 👈 padding hata do */
+  margin: 0 0px;              /* 👈 agar gap chahiye to margin use karo */
+  border-bottom: 2px solid black;   
+}
+
+.city:hover {
+  color: #4caf50;
+  border-bottom-color: #4caf50;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-section {
+    display: flex;          /* ✅ row me laa do */
+  align-items: flex-start; /* vertical alignment control */
+  justify-content: space-between; /* gap banane ke liye */
+  gap: 30px;              /* thoda space */
+  }
+  
+
+  .inline-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cities-list {
+    justify-content: center;
+  }
+
+  .testimonials-title {
+    font-size: 2rem;
+  }
+
+  .app-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .partner-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .divider-vertical {
+    display: none; /* ✅ mobile pe divider remove */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-title {
+    font-size: 1.6rem;
+  }
+
+  .app-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .phone-image {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .partner-section {
+    padding: 20px 10px;
+  }
+}
