@@ -303,7 +303,7 @@ const WhyYatri = () => {
           <img src="/image copy.png" alt="Yatri Cabs" className="logo" />
         </div>
         <div className="header1">
-          <img src="/header.png" alt="Header Image" />
+          <img src="/header.png" alt="Header" />
         </div>
         <div className="user-actions">
           <button className="download-app">
